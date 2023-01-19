@@ -23,6 +23,15 @@ This is an e-commerce React application that allows users to browse and purchase
 - The ToastProvider component provides a global context for displaying toast notifications in the application.
 - The GlobalCartContextProvider component provides a global context for the cart state.
 
+## Video
+
+
+
+https://user-images.githubusercontent.com/110572038/213545389-959809c7-3dda-472b-a210-be5e4259d261.mp4
+
+
+
+
 
 ## Screenshots
 ![react final proj  e commerce screens](https://user-images.githubusercontent.com/110572038/213535046-0c5e16f6-1631-4e2a-a21e-8cd9f3c82d63.PNG)
