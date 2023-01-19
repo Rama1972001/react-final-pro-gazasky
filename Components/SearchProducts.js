@@ -34,8 +34,8 @@ export default function SearchProducts() {
       if (results.length < 1) {
         addToast(
           " No result found for the following product: " +
-            query +
-            ". Please provide a valid product name and try again.",
+          query +
+          ". Please provide a valid product name and try again.",
           { appearance: "error", autoDismiss: true }
         );
       }
@@ -50,7 +50,7 @@ export default function SearchProducts() {
   const handleSearchInput = (e) => {
     setQuery(e.target.value);
     setsearchresult([]);
-  
+
   };
   return (
     <div>
@@ -60,7 +60,7 @@ export default function SearchProducts() {
       <div className="row container-search-bar">
         <div className="col-lg-12">
           <h1>
-            Search products. {query.length > 0 ? "Search query: " + query : ""}
+            Search products
           </h1>
           <div className="mb-3">
             {loading && (
@@ -91,12 +91,15 @@ export default function SearchProducts() {
       <div className="containet-search-product">
         <div className="container-products">
           <div className="row">
+            {/* check if the list is not empty, and then map over it to render each item as a separate component. It is also using the ternary operator in JSX, which is a shorthand for an if-else statement.
+ */}
+
             {searchresult.length >= 1
               ? searchresult.map((product) => (
-                  <Product data={product} key={product.id} />
-                ))
+                <Product data={product} key={product.id} />
+              ))
               : ""}
-            
+
           </div>
         </div>
       </div>

@@ -22,18 +22,7 @@ export default function Products(props) {
       products = data.filter((product) => product.category === collectionname);
       header_collection = "Collection: " + collectionname.toUpperCase();
       break;
-    case "Trending":
-      products = data.filter(
-        (product) => product.product_status === collectionname
-      );
-      header_collection = "Collection: " + collectionname.toUpperCase();
-      break;
-    case "New":
-      products = data.filter(
-        (product) => product.product_status === collectionname
-      );
-      header_collection = "Collection: " + collectionname.toUpperCase();
-      break;
+   
     default:
       products = data;
       header_collection="Products list";

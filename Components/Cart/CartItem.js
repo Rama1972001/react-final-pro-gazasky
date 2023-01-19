@@ -9,13 +9,19 @@ export default function CartItem(props) {
   const { removeItemFromCart, saveItemforLater } = useContext(
     GlobalCartContext
   );
+  // useContext  allows a component to access and use shared state, that is defined higher up in the component tree.
+
+//  the component is using the useContext hook to access the GlobalCartContext object. The GlobalCartContext is state object that is defined elsewhere in the application and is being used to store data related to the cart, such as the items in the cart and methods 
+
+  // The component using the useContext access the removeItemFromCart and saveItemforLater methods from the GlobalCartContext object. These methods are perform actions on the cart
+  
 
   function removeFromCart(id) {
     removeItemFromCart(id);
     addToast(props.data.productname+" successfully removed from your cart", { appearance: 'info', autoDismiss: true, })
    
   }
-
+  // By using the useContext hook, the component can access the GlobalCartContext object and its methods without having to pass the context down through props from a higher-level component. This allows the component to easily access and update the shared state of the cart, making it more modular and reusable.
   function saveForLater(data) {
     const savedItem = {
       productname: data.productname,

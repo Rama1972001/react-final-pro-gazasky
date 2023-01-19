@@ -19,17 +19,18 @@
   padding: 20px 0;
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
 }
 .animated-text{
   animation: color-change 5s linear infinite;
+  font-size: 20px!important;
 }
 
 @keyframes color-change {
- 0% { color: #28a745; }
- 50% { color: #ffc107; }
- 100% { color: #28a745; }
+ 0% { color: #e8ba48; }
+ 50% { color: #ffffff; }
+ 100% { color: #6a6161; }
 }
 
 .main-footer-copyright {

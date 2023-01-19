@@ -16,23 +16,6 @@ import {  useToasts } from 'react-toast-notifications';
 
 export default function ProductDetails(props) {
 
-  // const {action} =props;
-  // let product_display_mode="action_view";
-
-  //TODO 
-   
-  // switch(action){
- 
-  //   case "edit":
-  //        product_display_mode="action_edit";
-  //        break;
-  //   default: 
-  //        product_display_mode="action_view";
-
-  // }
-
-  
-   
  
 
   const { addToast } = useToasts();
